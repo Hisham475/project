@@ -11,8 +11,6 @@ import java.util.ArrayList;
 public class listViewAdapter {
     public ArrayList<Student> personlist;
     Activity activity;
-    //SearchActivity s;
-
     public listViewAdapter(Activity activity, ArrayList<Student> personlist) {
         super();
         this.activity = activity;
@@ -22,11 +20,9 @@ public class listViewAdapter {
         return personlist.size();
     }
 
-
     public Object getItem(int position) {
         return personlist.get(position);
     }
-
 
     public long getItemId(int position) {
         return position;
@@ -39,7 +35,6 @@ public class listViewAdapter {
         TextView mEmail;
         TextView mDepartment;
     }
-
     public View getView(int position, View convertView, ViewGroup parent) {
 
         ViewHolder holder;

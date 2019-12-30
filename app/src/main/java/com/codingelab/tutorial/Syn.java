@@ -17,11 +17,8 @@ import java.net.URLEncoder;
 
 import javax.net.ssl.HttpsURLConnection;
 
-/**
- * Created by xbcis on 22/05/16.
- */
 public class Syn extends AsyncTask<String,Void,String> {
-    public String URL="http://192.168.60.90/sqli/";
+    public String URL="http://192.168.1.5/sqli/";
     public String phpPageULR=URL+"mysql_write.php";
 
     @Override

@@ -84,9 +84,6 @@ public class DeleteActivityPhp extends AppCompatActivity {
             }
             @Override
             protected String doInBackground(Void... voids) {
-
-
-
                 try {
                     URL url = new URL(urlWebService);
 
@@ -107,11 +104,8 @@ public class DeleteActivityPhp extends AppCompatActivity {
                 } catch (Exception e) {
                     return null;
                 }
-
             }
         }
-
-        //creating asynctask object and executing it
         GetJSON getJSON = new GetJSON();
         getJSON.execute();
     }

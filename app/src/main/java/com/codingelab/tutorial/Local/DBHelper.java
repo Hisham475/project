@@ -45,7 +45,7 @@ public class DBHelper extends SQLiteOpenHelper {
         onCreate(db);
     }
 
-    public boolean insertContact  (String name, String phone, String email)//, String street,String place)
+    public boolean insertContact  (String name, String phone, String email)
     {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
@@ -72,7 +72,6 @@ public class DBHelper extends SQLiteOpenHelper {
     }
     public Cursor DeleteAllTable()
     {
-        //TRUNCATE TABLE users;
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor last =  db.rawQuery("delete from contacts", null );
         return last;
@@ -145,13 +144,11 @@ public class DBHelper extends SQLiteOpenHelper {
 
     public List getDataSearch(String Text){
         SQLiteDatabase db = this.getReadableDatabase();
-      //  Cursor res =  db.rawQuery( "select * from contacts where name like "+Text+"%", null );
         List<Student> contactList = new ArrayList<Student>();
 
         String selectQuery = "select * from contacts";
 
         SQLiteDatabase database = this.getWritableDatabase();
-        //Cursor cursor = database.rawQuery("select * from contacts where "+ Text+" like nsme" , null);
         Cursor cursor = database.rawQuery("select * from contacts where name like '%"+ Text+"%' or phone like '%"+Text+"%' or email like '%"+Text+"'" , null);
         if(cursor.moveToFirst()) {
             do {

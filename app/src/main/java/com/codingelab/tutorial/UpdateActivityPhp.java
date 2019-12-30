@@ -64,13 +64,8 @@ public class UpdateActivityPhp extends AppCompatActivity {
                     e.printStackTrace();
                 }
             }
-
-
             @Override
             protected String doInBackground(Void... voids) {
-
-
-
                 try {
                     URL url = new URL(urlWebService);
 

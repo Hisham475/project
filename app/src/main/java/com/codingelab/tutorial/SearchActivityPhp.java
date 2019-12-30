@@ -35,8 +35,6 @@ public class SearchActivityPhp extends AppCompatActivity {
     Syn syn;
     private ListView listViewP;
     ArrayAdapter adapter;
-    //ListAdapter adapter;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
