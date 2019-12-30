@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Local.MainActivityLocal">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/listViewL"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+
+        <Button
+            android:id="@+id/bttnToAddL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_2b"
+            android:text="ADD"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/bttnToUpdateL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_2b"
+            android:text="Update"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/bttnToDeleteL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_2b"
+            android:text="Delete"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/bttnToSearchL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_2b"
+            android:text="Search"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
